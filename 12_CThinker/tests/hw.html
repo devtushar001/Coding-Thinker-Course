@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+
+        .transform div {
+            width: 300px;
+            height: 200px;
+            background-color: yellow;
+            transition: 2s;
+        }
+
+        .a {
+            /* transform: rotate(20deg); */
+            /* transform: rotateX(50deg); */
+            /* transform: rotateY(50deg); */
+        }
+
+        .a:hover {
+            transform: rotate(20deg);
+        }
+
+        .b {
+            /* transform: skew(20deg); */
+            /* transform: skewY(21deg); */
+            /* transform: skewX(20deg); */
+        }
+
+        .b:hover {
+            transform: skew(10deg, 12deg);
+        }
+
+        .c {
+            /* transform: scale(1.4); */
+            /* transform: scaleX(1.4); */
+        }
+
+        .c:hover {
+            transform: scale(0.5, 1.5);
+        }
+
+        .d:hover {
+            /* transform: translate(30px, 40px); */
+            /* transform: translateX(50px); */
+            transform: translateY(100px);
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .parent {
+            width: 100vw;
+            background-color: lightblue;
+            position: relative;
+        }
+
+        .one, {
+            position: absolute;
+        }
+
+        .two {
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="transform">
+        <h1>Transform Property</h1>
+        <br />
+         <h2>Transform rotate(20deg):</h2>
+        <div class="a">Hello World</div>
+        <br />
+    
+        <h2>Transform skewY(20deg):</h2>
+        <div class="b">Hello World</div>
+        <br />
+    
+        <h2>Transform scaleY(20):</h2>
+        <div class="c">Hello World</div>
+        <br />
+    
+        <h2>Transform translate(40px, 53px) :</h2>
+        <div class="d">Hello World</div>
+        <br />
+    
+        <hr />
+    </div>
+</body>
+</html>

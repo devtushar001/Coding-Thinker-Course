@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .one, .two, .three {
+            width: 200px;
+            height: 200px;
+            transition: 4s;
+        }
+
+        .one {
+            background-color: green;
+        }
+
+        .one:hover {
+            background-color: darkblue;
+            border-radius: 50%;
+        }
+
+        .two {
+            background-color: orange;
+            transition: 4s;
+        }
+
+        .two:hover {
+            height: 600px;
+        }
+
+        .three {
+            background-color: aqua;
+            transition: 4s;
+        }
+
+        .three:hover {
+            width: 500px;
+        }
+
+        /* Transition Property */
+        
+        #parent {
+            /* width: 100vw; */
+            height: 800px;
+            border: 2px solid orange;
+        }
+
+        #parent .box {
+            transition: 4s;
+            transition-delay: 2s;
+        }
+
+        #parent:hover .box{
+            margin-left: 1300px;
+            border-radius: 50%;
+        }
+
+        #parent div {
+            width: 200px;
+            height: 200px;
+        }
+
+        #parent div:nth-of-type(1) {
+            background-color: blueviolet;
+            transition-timing-function: ease;
+        }
+
+        #parent div:nth-of-type(2) {
+            background-color: aqua;
+            transition-timing-function: ease-in;
+        }
+
+        #parent div:nth-of-type(3) {
+            background-color: gold;
+            transition-timing-function: ease-in-out;
+        }
+
+        #parent div:nth-of-type(4) {
+            background-color: green;
+            transition-timing-function: ease-out;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* h2:hover { */
+            /* transform: translate(3px, 4px); */
+            /* transform: scaleY(2); */
+            /* transform: scale(4, 3); */
+            /* transform: rotate(120deg); */
+        /* } */
+
+        
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+
+    <!-- 
+    transition timing function -- lenear
+      ease in
+      ease out
+      ease in out
+      transition delay
+      transition property
+    -->
+
+    <div id="parent">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- 
+    Translate
+    transform -- translateX or Y (X, Y)
+    scaleX(2px) scaleY(3px)
+    rotateX(54deg) rotateY(34deg)
+
+    -->
+
+    <h2>This is text</h2>
+</body>
+</html>

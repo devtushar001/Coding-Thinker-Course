@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip</title>
+    <style>
+        .flip {
+            width: 400px;
+            height: 270px;
+            /* background: yellow; */
+            margin: 70px auto;
+            position: relative;
+            transition: 400ms;
+            transform-style: preserve-3d;
+        }
+
+        .flip:hover {
+            transform: rotateX(180deg);
+            /* transform: rotateY(-180deg); */
+            /* transform: translateY(200px); */
+            /* transform: translateX(200px); */
+            /* transform: translate(200px, 200px); */
+            /* transform: scale(1.2, 1.5); */
+        }
+
+        .flip div {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .one {
+            background: red;
+            z-index: 1;
+            backface-visibility: hidden;
+            /* display: none; */
+        }
+
+        .two {
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="flip">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+</body>
+</html>

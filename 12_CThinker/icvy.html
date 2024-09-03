@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .jump-ball {
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(red, yellow);
+        border-radius: 50%;
+        margin: 10px auto;
+        animation: jump-ball 800ms ease-in 0s infinite alternate running;
+        color: red;
+      }
+
+      @keyframes jump-ball {
+        0% {
+          margin-top: 0px;
+          transform: rotate(0deg);
+        }
+
+        100% {
+          margin-top: 80vh;
+          /* transform: scaleX(2); */
+          transform: rotate(360deg);
+          /* transform: translate(50px, 50px); */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jump-ball"></div>
+  </body>
+</html>

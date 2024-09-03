@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up Down</title>
+    <style> 
+
+        body {
+            height: 85vh;
+            background-color: yellow;
+        }
+
+        .ball {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(blue, red);
+            margin: 20px auto;
+            animation: bounce 700ms ease-in 0s infinite running none alternate;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0vh);
+            }
+
+            100% {
+                transform: translateY(84vh) rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

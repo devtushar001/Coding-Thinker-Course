@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ball</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-color: yellow;
+            
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(blue, red);
+            border-radius: 50%;
+            transform: rotate(360deg);
+            /* animation-name: moveupdown;
+            animation-duration: 600ms;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: moveupdown 600ms ease-in 0s infinite alternate running;
+        }
+
+        @keyframes moveupdown {
+            0 % {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(83vh) rotate(360deg);
+            /* transform: rotate(360deg); */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

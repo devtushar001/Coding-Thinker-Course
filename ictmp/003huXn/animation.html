@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container>a {
+            padding: 7px 15px;
+            border: 2px solid brown;
+            text-decoration: none;
+            color: brown;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            transition-property: all; /* any property name */
+            transition-duration: 1s;
+            /* transition-timing-function: ease-out; */
+            transition-timing-function: cubic-bezier(.57, .12, 1, .01);
+        }
+
+        .container>a:hover {
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#">Click Me</a>
+    </div>
+</body>
+</html>

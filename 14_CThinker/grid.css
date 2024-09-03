@@ -1,0 +1,89 @@
+.container {
+    width: 100vw;
+    height: auto;
+}
+
+#parent {
+    width: 98%;
+    height: auto;
+    /* padding: 12px; */
+    border: 1px solid brown;
+    display: grid;
+    grid-template-columns: 300px 200px 100px;
+    grid-template-rows: 300px 200px 100px;
+    grid-auto-flow: column;
+    /* grid-auto-columns: auto; or */
+    grid-auto-columns: 1fr;
+    /* grid-auto-rows: 100px; */
+    /* grid-auto-rows: 100px; not working */ 
+}
+
+/* #parent div {
+    /* margin: 20px; */
+    /* width: 300px;
+    height: 200px; */
+/* } */ 
+
+#parent div:nth-of-type(1){
+    background-color: darkblue;
+}
+
+#parent div:nth-of-type(2) {
+    background-color: darkcyan;
+}
+
+#parent div:nth-of-type(3) {
+    background-color: darkgreen;
+}
+
+#parent div:nth-of-type(4) {
+    background-color: darkorange;
+}
+
+#parent div:nth-of-type(5) {
+    background-color: darkred;
+}
+
+#parent div:nth-of-type(6) {
+    background-color: cyan;
+}
+
+#parent div:nth-of-type(7) {
+    background-color: lightseagreen;
+}
+
+#parent div:nth-of-type(8) {
+    background-color: lightcoral;
+}
+
+#parent div:nth-of-type(9) {
+    background-color: lightskyblue;
+}
+
+#parent div:nth-of-type(10) {
+    background-color: yellow;
+}
+
+#parent div:nth-of-type(11) {
+    background-color: darkgoldenrod;
+}
+
+#parent div:nth-of-type(12) {
+    background-color: blue;
+}
+
+/* second parent */
+
+.second-parent {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: auto auto auto auto;
+    overflow: hidden;
+}
+
+.second-parent img {
+    width: 300px;
+    height: auto;
+}

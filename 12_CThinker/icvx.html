@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .bounse-ball {
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(blue, red);
+        border-radius: 50%;
+        /* transform: rotate(67deg); */
+        animation: bounse 1000ms ease-in 0s infinite alternate running;
+      }
+
+      @keyframes bounse {
+        0% {
+          /* width: 100px; */
+          height: 50px;
+        }
+
+        100% {
+          width: 500px;
+          height: 500px;
+          transform: rotate(180deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bounse-ball"></div>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #deab5f;
+    --primary-color: #312e2e;
+    --secondary-color: #4f4b7a;
+}
+
+/* Utility Style */
+
+button {
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background: #100e0f;
+}
+
+/* Nav Start*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding-top: 15px;
+}
+
+li {
+    display: inline;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    transition: 0.15s;
+    transition-timing-function: ease-in-out;
+    padding-bottom: 5px;
+}
+
+li a:hover {
+    border-bottom: 2px solid var(--main-color);
+    opacity: 0.85;
+}
+
+/* Nav End */
+/* Header Start */
+ 
+.header {
+    margin-top: 10px;
+    background: url(images/food_22.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal;
+    /* Flexbox */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+     position: relative;
+     text-align: center;
+}
+
+/* Header End */
+
+.main-heading {
+    position: absolute;
+    top: 7rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+}
+
+.primary-heading {
+    position: absolute;
+    bottom: 4rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -20px;
+}
+
+.main-btn {
+    position: absolute;
+    bottom: 2rem;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background: transparent;
+    background: var(--main-color);
+    transform: translateY(60px);
+}
+
+/* Our story start */
+
+#our-story {
+    height: 100vh;
+    margin: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    background: url(images/food_1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.title-style {
+    display: flex;
+    align-items: center;
+
+}
+
+.title {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    transform: translateX(-100px);
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-120px);
+}
+
+.section-content p{
+   max-width: 500px;
+   color: #fff;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   line-height: 20px;
+   margin: 20px 0;
+}
+
+/* Our story start */

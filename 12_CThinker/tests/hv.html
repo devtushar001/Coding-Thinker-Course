@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+
+        body {
+            perspective: 900px;
+        }
+
+        img {
+            width: 400px;
+            height: 250px;
+        }
+
+        .parent {
+            width: 400px;
+            margin: 90px auto;
+            position: relative;
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+
+        .parent:hover {
+            transform: rotateY(-180deg);
+        }
+
+        .one, .two{
+            position: absolute;
+            
+        }
+
+        .two {
+            padding: 5px;
+            width: 390px;
+            height: 240px;
+            transform: rotateY(180deg);
+            background-color: skyblue;
+        }
+
+        .one {
+            z-index: 1;
+            backface-visibility: hidden;
+        }
+
+        .ball {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(blue, red);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="one">
+            <img src="https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="two" style="color: white;">
+            <h2>This is program!</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem eius veritatis asperiores saepe itaque eos nam ea laboriosam, alias, consequuntur ratione at fuga quisquam corporis repudiandae dolorem aspernatur voluptates!
+            <p style="font-weight: bold;
+                      margin-top: 40px;">Thanks for watch</p>
+        </div>
+    </div>
+
+</body>
+</html>

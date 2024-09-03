@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        #parent {
+            width: 98vw;
+            height: 50vh;
+            border: 2px solid blue;
+            display: flex;
+            align-items: center;
+            /* align-items: end; */
+            /* align-items: flex-end; */
+            /* justify-content: space-between; */
+            justify-content: center;
+            /* justify-content: right; */
+            /* justify-content: start; */
+            /* flex-wrap: wrap; */
+
+        }
+
+        #parent div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .one {
+           background-color: rgb(253, 40, 40);
+           /* flex-grow: 1; */
+        }
+
+        .two {
+            background-color: rgb(49, 224, 0);
+            /* flex-grow: 2; */
+            /* flex-grow: 5; */
+        }
+
+        .three {
+            background-color: rgb(0, 179, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>
