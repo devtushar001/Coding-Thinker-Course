@@ -1,0 +1,75 @@
+.one {
+  border: 2px solid lightblue;
+  padding: 20px;
+  margin: 10px;
+}
+
+div[class='two'] {
+  border: 2px solid lightcoral;
+  padding: 20px;
+  margin: 10px;
+}
+
+div[id='block'] {
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  display: inline-block;
+}
+
+span[id='inline'] {
+  display: inline-block;
+  background-color: lightcoral;
+  width: 300px;
+  height: 300px;
+}
+
+#hidden {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 55, 0);
+  visibility: hidden;
+}
+
+#two {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  display: none;
+}
+
+.span-tag {
+  height: 300px; /*  Not applied  */
+  width: 300px; /*  Not applied ddue to it's a inline block */
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+  width: 300px;
+  height:300px;
+  display: inline-block;
+}
+
+.red {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  /* position: relative;
+  top: 100px;
+  left: 100px; */
+  /* position: absolute;
+  top: 100px;
+  left: 100px; */
+  position: fixed;
+  right: 300px;
+  top: 300px;
+}
+
+.blue {
+  background-color: blue;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}

@@ -1,0 +1,56 @@
+div p {
+  color: red;
+}
+
+div p:hover {
+  color: blue;
+}
+
+span p {
+  color: green;
+}
+
+span p:hover {
+  color: darkcyan;
+}
+/* ul li:nth-child(3) {
+  background-color: lightcoral;
+} */
+
+/* ul li:nth-child(odd) {
+  background-color: lightblue;
+}
+
+ul li:nth-child(even) {
+  background-color: lightseagreen;
+} */
+
+/* ul li:first-child {
+  background-color: aqua;
+} */
+
+/* ul li:last-child {
+  background-color: aquamarine;
+} */
+
+.one {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: 2s;
+}
+
+.one:hover {
+  background-color: green;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+}
+
+ul li{
+  background-color: lightseagreen;
+}
+
+ul li:hover {
+  background-color: lightcoral;
+}

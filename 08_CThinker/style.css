@@ -1,0 +1,42 @@
+.parent {
+  /* width: 600px;  */
+  height: 600px;
+  border: 2px solid saddlebrown;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* justify-content: start; */
+  justify-content: center;
+  /* justify-content: end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* 
+    align-item -- baseline, center, end, 
+  */
+  /* align-items: baseline; */
+  align-items: center;
+  /* align-items: end; */
+  /* justify-content: space-evenly; */
+  /* flex-wrap: wrap; */
+
+}
+
+.one {
+  width: 100px;
+  height: 100px;
+}
+
+#one {
+  background-color: red;
+}
+
+#two {
+  background-color: green;
+}
+
+
+#three {
+  background-color: blue;
+}
